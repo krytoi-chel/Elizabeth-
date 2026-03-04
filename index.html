@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Моей любимой брбр патамип</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(180deg, #0f1f14, #1e3a2c);
+    color: #f5f1e6;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.main-text {
+    max-width: 700px;
+    margin: 40px auto;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.quote {
+    font-style: italic;
+    margin: 30px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-card {
+    width: 250px;
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.photo-text {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Лепестки сакуры */
+.petal {
+    position: fixed;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: pink;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>МОЙ БОС КФС</h1>
+
+<div class="main-text">
+Когда тебя рожали все капец дрожали,и никто не понимал,че ты такая белая❤️☝️💀
+</div>
+
+<div class="quote">
+"Чем гуще трава и больше лес скиби доп доп есес
+</div>
+
+<div class="gallery">
+    <div class="photo-card">
+        <img src="photo1.jpg" alt="">
+        <div class="photo-text">ти спиш</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="photo2.jpg" alt="">
+        <div class="photo-text">ой</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="photo3.jpg" alt="">
+        <div class="photo-text">миии</div>
+    </div>
+</div>
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+for (let i = 0; i < 30; i++) {
+    let petal = document.createElement("div");
+    petal.className = "petal";
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = (5 + Math.random() * 5) + "s";
+    document.body.appendChild(petal);
+}
+</script>
+
+</body>
+</html>
